@@ -1,0 +1,293 @@
+body {
+	position: relative;
+	width: 1440px;
+	height: 1024px;
+	background: #F3F5FC;
+}
+
+
+div {
+	align-items: center;
+}
+
+.logo{
+	width: 120px;
+	height: 48px;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.textoencriptar{
+	
+	position: absolute;
+	width: 500px;
+	height: 600px;
+	left: 140px;
+	top: 120px;
+	border: none;
+	resize: none;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	color: #0A3871;
+	line-height: 150%;
+}
+
+::placeholder {
+	color: #0A3871;
+}
+
+
+.mensaje{
+	position: absolute;
+	bottom: 147px;
+	left: 40px;
+	width: 300px;
+	height: 18px;
+}
+
+#informativo{
+/* leyenda que acompaña el icono anterior */
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 150%;
+
+	color: #495057;
+
+	opacity: 0.8;
+	flex: none; 
+	order: 1;
+	flex-grow: 0; 
+}
+
+.encriptar{
+	
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 24px;
+	gap: 8px;
+
+	position: absolute;
+	bottom: 100px;
+	left: 40px;
+	width: 328px;
+	height: 67px;
+	font-size: 20px;
+	text-align:center;
+	color: white;
+
+	background: #0A3871;
+	border-radius: 24px;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.encriptar:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+
+.desencriptar{
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 24px;
+	gap: 8px;
+
+	position: absolute;
+	bottom: 100px;
+	left: 408px;
+	width: 328px;
+	height: 67px;
+
+	/* Light gray */
+	background: #D8DFE8;
+
+	font-size: 20px;
+	color: white;
+	
+	/* Dark blue/dark-blue-300 */
+	border: 1px solid #0A3871;
+	border-radius: 24px;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+
+.desencriptar:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+
+#caja{
+	position: absolute;
+	width: 400px;
+	height: 920px;
+	left: 1000px;
+	top: 40px;
+	
+	background: #FFFFFF;
+
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+	border-radius: 32px;
+}
+
+#resultado-encriptado{
+	
+	position: absolute;
+	width: 400px;
+	height: 450px;
+	border: none;
+	resize: none;
+	display: none;
+	overflow-wrap: break-word;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 150%;
+
+	color: #0A3871;
+}
+
+#munieco{
+	position: absolute;
+	width: 380px;
+	height: 310px;
+	top: 220px;
+}
+#munieco:hover{
+	transform: scale(1.2);
+}
+
+
+.div-texto1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#texto1{
+	position: absolute;
+	width: 336px;
+	height: 58px;
+	top: 570px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+
+	text-align: center;
+
+	color: #343A40;
+}
+
+.div-texto2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#texto2{
+	position: absolute;
+	width: 336px;
+	height: 48px;
+	top: 720px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+
+	/* or 24px */
+	text-align: center;
+
+	/* Gray/gray-400 */
+	color: #495057;
+}
+
+.copiar{
+	
+	box-sizing: border-box;
+
+  /*	display: flex; */
+
+    display: none;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 20px;
+	gap: 8px;
+
+	position: absolute;
+	bottom: 40px;
+	right: 40px; 
+	width: 328px;
+	height: 67px;
+
+	/* Light gray */
+	background: #D8DFE8;
+
+	font-size: 20px;
+	color: white;
+	
+	/* Dark blue/dark-blue-300 */
+	border: 1px solid #0A3871;
+	border-radius: 24px;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+
+}
+
+.copiar:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.pie-pagina {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+  color: #443963;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: Arial;
+  text-transform: lowercase;
+}
+
+.logo-linkedin{
+	position: absolute;
+	bottom: 37px;
+	left: 530px;
+	width: 80px;
+	height: 35px;
+}
+
+.logo-github{
+	position: absolute;
+	bottom: 37px;
+	left: 620px;
+	width: 80px;
+	height: 35px;
+}
